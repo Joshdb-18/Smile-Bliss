@@ -639,30 +639,26 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null
       </li>
       <li class="form-line" data-type="control_button" id="id_31">
         <div id="cid_31" class="form-input-wide" data-layout="full">
-          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_31" type="submit" class="form-submit-button form-submit-button-gradient-7 submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="submitBtn" type="submit" class="form-submit-button form-submit-button-gradient-7 submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
         </div>
       </li>
-<!--       <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li> -->
     </ul>
   </div>
-  <script>
-    JotForm.showJotFormPowered = "new_footer";
-  </script>
-  <script>
-    JotForm.poweredByText = "Powered by Jotform";
-  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="231592382084559" />
-  <script type="text/javascript">
-    var all_spc = document.querySelectorAll("form[id='231592382084559'] .si" + "mple" + "_spc");
-    for (var i = 0; i < all_spc.length; i++)
-    {
-      all_spc[i].value = "231592382084559-231592382084559";
-    }
-  </script>
-<!--   <div class="formFooter-heightMask"></div>
-  <div class="formFooter f6 branding21">
-    <div class="formFooter-wrapper formFooter-leftSide"><a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=231592382084559&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le" target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo2021/jotform-logo-white.svg" alt="Jotform Logo" style="height: 44px;"></a></div>
-    <div class="formFooter-wrapper formFooter-rightSide"><span class="formFooter-text">Now create your own Jotform - It's free!</span><a class="formFooter-button" href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=231592382084559&utm_content=jotform_button&utm_campaign=powered_by_jotform_le" target="_blank">Create your own Jotform</a></div>
-  </div> -->
-</form></body>
+</form>
+<script>
+// Get the submit button element by its id
+var submitButton = document.getElementById('submitBtn');
+
+// Add a click event listener to the submit button
+submitButton.addEventListener('click', function(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Redirect the user to feedback.html
+  window.location.href = 'feedback.html';
+});
+
+</script>
+</body>
 </html><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.42626"></script>
 <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.42626"></script>
