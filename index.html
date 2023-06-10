@@ -12,6 +12,16 @@
     body {
       margin-left: 30px; /* Adjust the value to move the page to the right */
     }
+    .img-logo {
+      max-width: 200px; /* Set the maximum width */
+      height: auto; /* Maintain the aspect ratio */
+  }
+
+  /* Adjust the size of the cover image */
+  .img-cover {
+    max-width: 500px; /* Set the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+  }
     .form-control:focus {
       border-color: lightgreen;
       box-shadow: none;
@@ -102,8 +112,8 @@
 <body>
   <!-- Logo and cover image -->
   <div class="container mt-3 text-center">
-    <img src="smile_bliss.png" alt="Logo" class="img-fluid">
-    <img src="cover.jpg" alt="Cover Image" class="img-fluid">
+    <img src="smile_bliss.png" alt="Logo" class="img-fluid img-logo">
+    <img src="cover.jpg" alt="Cover Image" class="img-fluid img-cover">
   </div>
 
   <!-- Feedback Form -->
