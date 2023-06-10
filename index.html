@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    .form-control:focus {
+      border-color: lightgreen;
+      box-shadow: none;
+    }
+
+    .star-rating {
+      display: inline-block;
+      font-size: 2rem;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .star-rating:hover,
+    .star-rating:hover ~ .star-rating {
+      color: #0FC12E;
+    }
+
+    .star-rating:checked ~ .star-rating:before,
+    .star-rating:hover:before{
+      color: #0FC12E;
+    }
+    
+    .satisfaction-level .form-check-input:checked {
+      background-color: #0FC12E;
+      border-color: #0FC12E;
+    }
+
+    .satisfaction-level .form-check-input:hover {
+      background-color: #0FC12E;
+      border-color: #0FC12E;
+    }
+    
+    /* Hide radio buttons */
+    .star-rating input[type="radio"] {
+      display: none;
+    }
+    
+    /* Style radio button as stars */
+    .star-rating label {
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      cursor: pointer;
+    }
+    .star-rating label:after {
+      color: #0FC12E;
+      }
+    
+    .star-rating label:before {
+      content: '\2606'; /* Empty star */
+      font-size: 2rem;
+      
+    }
+    
+    .star-rating label:after {
+      content: '\2605'; /* Filled star */
+      font-size: 2rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+    
+    .star-rating input[type="radio"]:checked + label:after {
+      opacity: 1;
+    }
+    .star-rating input[type="radio"]:checked ~ label:before {
+  content: '\2605'; /* Filled star */
+  color: #0FC12E;
+}
+
+.star-rating input[type="radio"]:checked ~ label:before,
+.star-rating input[type="radio"]:checked ~ label ~ label:before {
+  color: #0FC12E;
+}
+    .btn-primary {
+    background-color: #0FC12E;
+    border-color: #0FC12E;
+}
+  .btn-primary:hover {
+    background-color: #04AB6C;
+    border-color: #04AB6C;
+
+  </style>
+</head>
+
+<body>
+  <!-- Logo and cover image -->
+  <div class="container mt-3">
+    <img src="smile_bliss.png" alt="Logo" class="img-fluid">
+    <img src="cover.jpg" alt="Cover Image" class="img-fluid">
+  </div>
+
+  <!-- Feedback Form -->
+  <div class="container mt-3">
+    <h1>Smile Bliss Feedback Form</h1>
+    <form>
+      <!-- Full Name -->
+      <div class="mb-4">
+        <label for="fullName" class="form-label">Name</label>
+        <input type="text" placeholder="Enter your full name" class="form-control" id="fullName" required>
+      </div>
+
+      <!-- Satisfaction Level -->
+      <div class="mb-3 satisfaction-level">
+        <label class="form-label"><b>How satisfied are you with our service?</b></label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="verySatisfied" value="verySatisfied">
+          <label class="form-check-label" for="verySatisfied">
+            Very Satisfied
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="satisfied" value="satisfied">
+          <label class="form-check-label" for="satisfied">
+            Satisfied
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="neutral" value="neutral">
+          <label class="form-check-label" for="neutral">
+            Neutral
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="unsatisfied" value="unsatisfied">
+          <label class="form-check-label" for="unsatisfied">
+            Unsatisfied
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="veryUnsatisfied" value="veryUnsatisfied">
+          <label class="form-check-label" for="veryUnsatisfied">
+            Very Unsatisfied
+          </label>
+        </div>
+      </div>
+
+      <!-- Star Rating -->
+      <div><br>
+        <h4><label class="form-label">Rate our service</label></h4>
+        <div class="mb-3 star-rating">
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1" class="star-rating"></label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2" class="star-rating"></label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3" class="star-rating"></label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4" class="star-rating"></label>
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5" class="star-rating"></label>
+        </div>
+      </div>
+
+      <!-- Feedback Text -->
+      <div class="mb-3">
+        <label for="feedbackText" class="form-label"><b>Please share your experience with our services</b></label>
+        <textarea class="form-control" id="feedbackText" rows="4" placeholder="Type your feedback here" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="feedbackText" class="form-label"><b>What do you think we need to improve on?</b></label>
+        <textarea class="form-control" id="feedbackText" rows="4" placeholder="Type your feedback here" required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+  <button type="submit" class="btn btn-primary">Submit Feedback</button>
+</div>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Function to handle checkbox behavior
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function () {
+        checkboxes.forEach(cb => {
+          if (cb !== this) {
+            cb.checked = false;
+          }
+        });
+      });
+    });
+  // Function to handle star rating behavior
+  const starRadios = document.querySelectorAll('input[name="rating"]');
+  starRadios.forEach(radio => {
+    radio.addEventListener('change', function () {
+      const selectedValue = parseInt(this.value);
+      starRadios.forEach(radio => {
+        const label = radio.nextElementSibling;
+        const ratingValue = parseInt(radio.value);
+        if (ratingValue <= selectedValue) {
+          label.classList.remove('star-rating');
+        } else {
+          label.classList.add('star-rating');
+        }
+      });
+    });
+  });
+  </script>
+</body>
+
+</html>
