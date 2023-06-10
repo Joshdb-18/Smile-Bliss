@@ -16,13 +16,7 @@
   max-width: 100px; /* Set the maximum width */
   height: auto; /* Maintain the aspect ratio */
 }
-
-/* Adjust the size of the cover image */
-/* .img-cover { */
-/*   max-width: 500px; /* Set the maximum width */ */
-/*   height: auto; /* Maintain the aspect ratio */ */
-/* } */
-    .form-control:focus {
+   .form-control:focus {
       border-color: lightgreen;
       box-shadow: none;
     }
@@ -98,16 +92,13 @@
 .star-rating input[type="radio"]:checked ~ label ~ label:before {
   color: #0FC12E;
 }
- .half-width {
-   width: 50%;
- }
-  .btn-primary {
+    .btn-primary {
     background-color: #0FC12E;
     border-color: #0FC12E;
 }
-.btn-primary:hover {
-  background-color: #04AB6C;
-  border-color: #04AB6C;
+  .btn-primary:hover {
+    background-color: #04AB6C;
+    border-color: #04AB6C;
 
   </style>
 </head>
@@ -115,7 +106,7 @@
 <body>
   <!-- Logo and cover image -->
   <div class="container mt-3 text-center">
-    <img src="smile_bliss.png" alt="Logo" class="img-fluid img-logo"><br>
+    <img src="smile_bliss.png" alt="Logo" class="img-fluid img-logo">
     <img src="cover.jpg" alt="Cover Image" class="img-fluid img-cover">
   </div>
 
@@ -126,7 +117,7 @@
       <!-- Full Name -->
       <div class="mb-4">
         <label for="fullName" class="form-label">Name</label>
-        <input type="text" placeholder="Enter your full name" class="form-control half-width" id="fullName" required>
+        <input type="text" placeholder="Enter your full name" class="form-control" id="fullName" required>
       </div>
 
       <!-- Satisfaction Level -->
@@ -184,17 +175,17 @@
       <!-- Feedback Text -->
       <div class="mb-3">
         <label for="feedbackText" class="form-label"><b>Please share your experience with our services</b></label>
-        <textarea class="form-control half-width" id="feedbackText" rows="4" placeholder="Type your feedback here" required></textarea>
+        <textarea class="form-control col-6" id="feedbackText" rows="4" placeholder="Type your feedback here" required></textarea>
       </div>
       <div class="mb-3">
         <label for="feedbackText" class="form-label"><b>What do you think we need to improve on?</b></label>
-        <textarea class="form-control half-width" id="feedbackText" rows="4" placeholder="Type your feedback here" required></textarea>
+        <textarea class="form-control col-6" id="feedbackText" rows="4" placeholder="Type your feedback here" required></textarea>
       </div>
 
       <!-- Submit Button -->
-<!--       <div class="text-center"> -->
+      <div class="text-center">
   <button type="submit" class="btn btn-primary">Submit Feedback</button>
-<!-- </div> -->
+</div>
     </form>
   </div>
 
