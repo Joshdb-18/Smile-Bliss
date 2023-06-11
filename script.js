@@ -32,3 +32,15 @@ $(function() {
     }
   });
 });
+
+// Get the submit button element by its id
+var submitButton = document.getElementById('submitBtn');
+
+// Add a click event listener to the submit button
+submitButton.addEventListener('click', function(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Redirect the user to feedback.html
+  window.location.href = 'feedback.html';
+});
