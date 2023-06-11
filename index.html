@@ -26,7 +26,7 @@
       <!-- Full Name -->
       <div class="mb-4">
         <label for="fullName" class="form-label"><b>Name</b></label>
-        <div class="col-9">
+        <div class="col-8">
           <input type="text" placeholder="Enter your full name" class="form-control" id="fullName" required>
         </div>
       </div>
@@ -40,15 +40,65 @@
             Very Satisfied
           </label>
         </div>
-        <!-- Other checkboxes... -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="satisfied" value="satisfied">
+          <label class="form-check-label" for="satisfied">
+            Satisfied
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="neutral" value="neutral">
+          <label class="form-check-label" for="neutral">
+            Neutral
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="unsatisfied" value="unsatisfied">
+          <label class="form-check-label" for="unsatisfied">
+            Unsatisfied
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="veryUnsatisfied" value="veryUnsatisfied">
+          <label class="form-check-label" for="veryUnsatisfied">
+            Very Unsatisfied
+          </label>
+        </div>
       </div>
 
       <!-- Star Rating -->
-      <div><br>
+      <div>
+        <br>
         <h4><label class="form-label">Rate our service</label></h4>
       </div>
       <div class="wrap">
-        <!-- Stars and ratings... -->
+        <div class="stars">
+          <label class="rate">
+            <input type="radio" name="radio1" id="star1" value="star1">
+            <div class="face"></div>
+            <i class="far fa-star star one-star"></i>
+          </label>
+          <label class="rate">
+            <input type="radio" name="radio1" id="star2" value="star2">
+            <div class="face"></div>
+            <i class="far fa-star star two-star"></i>
+          </label>
+          <label class="rate">
+            <input type="radio" name="radio1" id="star3" value="star3">
+            <div class="face"></div>
+            <i class="far fa-star star three-star"></i>
+          </label>
+          <label class="rate">
+            <input type="radio" name="radio1" id="star4" value="star4">
+            <div class="face"></div>
+            <i class="far fa-star star four-star"></i>
+          </label>
+          <label class="rate">
+            <input type="radio" name="radio1" id="star5" value="star5">
+            <div class="face"></div>
+            <i class="far fa-star star five-star"></i>
+          </label>
+        </div>
       </div>
 
       <!-- Feedback Text -->
@@ -58,7 +108,13 @@
           <textarea class="form-control col-6" id="feedbackText" rows="4" placeholder="Type your feedback here" required></textarea>
         </div>
       </div>
-      <!-- Other feedback text area... -->
+
+      <div class="mb-3">
+        <label for="feedbackText" class="form-label"><b>What do you think we need to improve on?</b></label>
+        <div class="col-9">
+          <textarea class="form-control col-6" id="feedbackText" rows="4" placeholder="Type your feedback here" required></textarea>
+        </div>
+      </div>
 
       <!-- Submit Button -->
       <div class="text-center">
