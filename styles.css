@@ -28,14 +28,14 @@ body {
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   /* Large screens */
   .wrap {
     left: 18%;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   /* Phone screens */
   .wrap {
     left: 18%;
