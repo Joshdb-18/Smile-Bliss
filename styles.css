@@ -28,10 +28,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) {
   /* Large screens */
   .wrap {
-    left: -18%;
+    left: 2%;
   }
 }
 
