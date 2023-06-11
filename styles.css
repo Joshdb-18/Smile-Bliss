@@ -143,9 +143,9 @@ body {
   opacity: 1;
 }
 
-input[type="radio"]:checked + .face {
+/* input[type="radio"]:checked + .face {
   opacity: 1 !important;
-}
+} */
 
 .btn-primary {
   background-color: #0FC12E;
