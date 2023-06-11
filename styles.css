@@ -28,17 +28,53 @@ body {
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 993px) {
   /* Large screens */
   .wrap {
-    left: -60%;
+    right: 27%;
   }
 }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (min-width: 800px) and (max-width: 990px){
+  /* Large screens */
+  .wrap {
+    right: 15%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
   /* Phone screens */
   .wrap {
-    left: 18%;
+    right: 10%;
+  }
+}
+
+@media only screen and (min-width: 399px) and (max-width: 767px) {
+  /* Phone screens */
+  .wrap {
+    left: 5%;
+  }
+}
+
+@media only screen and (min-width: 371px) and (max-width: 398px) {
+  /* Phone screens */
+  .wrap {
+    left: 15%;
+  }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 370px){
+  /* Phone screens */
+  .wrap {
+    left: 25%;
+  }
+}
+
+@media only screen and (max-width: 324px){
+  /* Phone screens */
+  .wrap {
+    left: 30%;
   }
 }
 
